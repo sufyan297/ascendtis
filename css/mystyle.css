@@ -15,10 +15,32 @@ body, html {
 .heading-block {
   height: 180px;
 }
-.center-block {
+.service-icon-block {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.service-center-block {
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  border: 1px solid #00407b;
+}
+.service-info-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  color: white;
+}
+.service-info-body {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+.service-center-bg {
+  background-color: rgba(1,73,138,0.7);
 }
 .services-block {
   margin-top: -150px;

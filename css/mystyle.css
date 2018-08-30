@@ -62,3 +62,75 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.map-container {
+  height: 600px;
+}
+.map-image {
+  background-image: url("../images/Ascendtis_Location@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.map-overlay {
+  height: 100%;
+  background-color: rgba(1,73,138,0.6);
+}
+.map-marker {
+  background-image: url("../images/Ascendtis.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+.map-info {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.map-info h4 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  color: #8ec8ec;
+}
+.location-info {
+  padding-top: 5%;
+}
+.location-title {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.location-detail {
+  margin-bottom: 1px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 13px;
+}
+.primary-btn {
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+  display: block;
+  border: 0;
+  background-color: #0578e3;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Muli', sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white !important;
+  font-size: 17px;
+}
+.primary-btn:hover {
+  background-color: #006cd1;
+  text-decoration: none;
+}

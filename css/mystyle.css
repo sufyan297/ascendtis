@@ -134,3 +134,16 @@ body, html {
   background-color: #006cd1;
   text-decoration: none;
 }
+.location-address {
+  margin-left: -60px;
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .location-mobile-address {
+    margin-left: 0px;
+  }
+  .map-info {
+    margin-top: 50%;
+  }
+}

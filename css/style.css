@@ -1,0 +1,23 @@
+.logo {
+  height: 80px;
+  width: auto;
+}
+.style_navbar {
+  margin-left: 100px;
+}
+.nav-link {
+  color: #cdfbfe !important;
+}
+.bg-dark.blue-bg {
+  background-color: #004d95 !important;
+}
+.banner-block {
+  position: relative;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 200px 0 0;
+  border-color: #007bff transparent transparent transparent;
+}

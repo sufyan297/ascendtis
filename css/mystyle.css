@@ -138,6 +138,31 @@ body, html {
   margin-left: -60px;
 }
 
+.map-image-2 {
+  background-image: url("../images/Square_Screenshot_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.map-overlay-2 {
+  height: 100%;
+  background-color: rgba(1,73,138,0.5);
+}
+.map-marker-2 {
+  background-image: url("../images/Ascendtis.png");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: 37% 43%;
+  height: 100%;
+
+}
+
+.contact-card {
+  background-color: #fff;
+  height: 100%;
+}
+
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 576px) {
   .location-mobile-address {
@@ -145,5 +170,8 @@ body, html {
   }
   .map-info {
     margin-top: 50%;
+  }
+  .map-image-2 {
+
   }
 }

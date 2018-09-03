@@ -167,10 +167,14 @@ body, html {
   font-weight: 400;
   color: white;
 }
-
+.cursor-pointer {
+  cursor: pointer;
+}
 .contact-card {
+  box-shadow: 1px 3px 5px 0px #03213e69;
   background-color: #144a85;
   margin-left: -100%;
+  margin-right: -32px;
 }
 
 /* Small devices (landscape phones, 576px and down) */

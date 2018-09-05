@@ -11,7 +11,10 @@ body, html {
 .block-dark-bg-blue {
   background: #00407b;
 }
-
+.light-blue-bg {
+  background: #014e96 !important;
+  background-color: #014e96 !important;
+}
 .heading-block {
   height: 180px;
 }
@@ -63,12 +66,25 @@ body, html {
   background-size: cover;
 }
 
+.bg-parallax-testimonial {
+  background-image: url("../images/photo-1473014294925-f0aebcb8e6da.jpg");
+
+  height: 55%;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 .map-container {
   height: 600px;
 }
 
 .map-container-2 {
-  height: 850px;
+  height: 940px;
 }
 
 .map-image {
@@ -152,7 +168,7 @@ body, html {
 }
 .map-overlay-2 {
   height: 100%;
-  background-color: rgba(1,73,138,0.5);
+  background-color: rgba(1,73,138,0.2);
 }
 .map-marker-2 {
   background-image: url("../images/Ascendtis.png");
@@ -173,10 +189,77 @@ body, html {
 .contact-card {
   box-shadow: 1px 3px 5px 0px #03213e69;
   background-color: #144a85;
-  margin-left: -100%;
+  margin-left: -110%;
   margin-right: -32px;
 }
+.testimonial-card {
+  background-color: #ffffff21;
+  min-height: 100px;
+  border-radius: 5px;
+}
+.testimonial-avatar-container {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50px;
+}
+.testimonial-avatar {
+  height: auto;
+  width: auto;
+  border-radius: 50px;
 
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+.quotes {
+  color: white;
+  font-size: 25px;
+  line-height: 0.8;
+}
+.testimonial-content {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.testimonial-person {
+  color: #8ec8ec;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+.testimonial-icon .owl-carousel .owl-nav .owl-prev {
+  left: 40px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.owl-carousel .owl-nav {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  margin: 0;
+  left: -40px;
+  right: -40px;
+}
+.testimonial-icon .owl-carousel .owl-nav .owl-next {
+  right: 40px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.owl-carousel .owl-nav [class*=owl-] img {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 576px) {
   .location-mobile-address {

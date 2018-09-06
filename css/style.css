@@ -15,6 +15,10 @@
   position: relative;
   height: 550px;
   overflow: hidden;
+  background-image: url("../images/viktor-jakovlev-36799-unsplash.jpg");
+  background-size: cover;
+  background-position-x: 256px;
+  background-position-y: -258px;
 }
 .banner_content {
   z-index: 1;

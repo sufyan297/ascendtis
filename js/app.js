@@ -1,23 +1,25 @@
 $(document).ready(function() {
 
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      stagePadding: 50,
-      navText: ['<img src="./images/chevron-left.svg">', '<img src="./images/chevron-right.svg">'],
-      responsive:{
-          0:{
-            items:1
-          },
-          600:{
-            items:1
-          },
-          1000:{
-            items:1
-          }
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    stagePadding: 50,
+    navText: ['<img src="./images/chevron-left.svg">', '<img src="./images/chevron-right.svg">'],
+    responsive:{
+      0:{
+        items:1,
+        nav: false,
+        stagePadding: 20
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
       }
-  })
+    }
+  });
 
   let idx = 0;
   blipMarker(idx);
@@ -39,20 +41,40 @@ $(document).ready(function() {
 
       // Store hash
       var hash = this.hash;
-  
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-    
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
+      console.log("Hash: ", hash);
+      if (hash === '#services') {
+        scrollToAnimate(hash, 1600);
+      } else if (hash === '#reviews') {
+        scrollToAnimate(hash, 300);
+      } else {
+        scrollToAnimate(hash, 800);
+      }
+     
     } // End if
   });
 
+
+  $('.article').readmore({
+    collapsedHeight: 50,
+    blockCSS: 'display: inline-block; width: 50%;',
+    speed: 100,
+    moreLink: '<a href="#">Read more</a>',
+    lessLink: '<a href="#">Close</a>'
+  });
+
+
 });
+
+function scrollToAnimate(hash, milliseconds = 800) {
+ // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, milliseconds, function(){
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+  });
+}
 
 function blipMarker(idx = 0) {
   switch(idx) {
@@ -65,4 +87,7 @@ function blipMarker(idx = 0) {
 
 function goToGoogleMap() {
   window.open("https://www.google.com/maps/place/Marvel+Square/@22.2807163,73.1519703,19z","_blank");
+}
+function goToUrl(url = '#') {
+  window.open(url,"_blank");
 }

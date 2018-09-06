@@ -8,7 +8,9 @@
   <!-- MyStyle -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/mystyle.css" />
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
   <!-- OwlCarousel 2 -->
@@ -127,7 +129,7 @@
                   Application Development
                 </h3>
                 <span class="service-info-body">
-                    Software is an essential part of any business. You will need a software online or offline. At Ascendtis, we provide you with the Web Apps/Desktop Apps as per your need.
+                  Software is an essential part of any business. You will need a software online or offline. At Ascendtis, we provide you with the Web Apps/Desktop Apps as per your need.
                 </span>
               </div>
 
@@ -256,11 +258,11 @@
 
 
     <!-- Another Location Portion -->
-    <div class="container-fluid p-0 w-100">
-        <div class="light-blue-bg">
-            <br/>
-            <br/>
-          </div>
+    <div id="location-contact" class="container-fluid p-0 w-100">
+      <div class="light-blue-bg">
+        <br/>
+        <br/>
+      </div>
     
       <div class="map-container-2 light-blue-bg">
         
@@ -269,7 +271,7 @@
             <div class="col col-md-10">
               <div class="map-image-2">
                 <div class="map-overlay-2">
-                  <div class="map-marker-2"></div>
+                  <div class="map-marker-2 cursor-pointer" onclick="goToGoogleMap()"></div>
                 </div>
               </div>
             </div>
@@ -407,7 +409,7 @@
 
 
     <!-- Testimonials -->
-    <div class="container-fluid p-0 w-100">
+    <div id="reviews" class="container-fluid p-0 w-100">
       <!-- Parallax Image -->
       <div class="bg-parallax-testimonial">
 
@@ -463,26 +465,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="item testimonial-card">
-                  <div class="row">
-                      <div class="col col-md-12 d-flex justify-content-center align-items-center">
-                        <div class="testimonial-avatar-container d-flex justify-content-center align-items-center mt-3">
-                          <img class="testimonial-avatar" src='./images/avatar1.jpg'/>
-                        </div>
-                      </div>
-                      <div class="col col-md-12">
-                        <div class="testimonial-content">
-                          <span class="quotes">“</span>
-                          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi at accusamus placeat, corporis asperiores neque unde praesentium aut earum quaerat vel consequatur tenetur fugit rem eaque veniam officiis reiciendis doloremque.</span>
-                          <span class="quotes">”</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mb-2">
-                          <h6 class="testimonial-person">Bhuvani Dharan, Theeni.com</h6>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                 -->
               </div>
   
             </div>
@@ -493,8 +475,51 @@
 
       </div>
 
-
     </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <div class="footer-social-icons mt-4">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col">
+            <!-- Social Icons -->
+            <img src="images/facebook-icon.png" />
+          </div>
+          <div class="col">
+            <!-- Social Icons -->
+            <img src="images/twitter-icon.png" />
+          </div>
+          <div class="col">
+            <!-- Social Icons -->
+            <img src="images/linked-in-icon.png" />
+          </div>
+        </div>
+      </div>
+
+    <div class="footer-navigation mt-4">
+      <div class="row">
+        <div class="col">
+          <a class="footer-navigation-title" href="#">Home</h6>
+        </div>
+        <div class="col">
+          <a class="footer-navigation-title" href="#">Services</a>
+        </div>
+        <div class="col">
+          <a class="footer-navigation-title" href="#location-contact">Contact</a>
+        </div>
+        <div class="col">
+          <a class="footer-navigation-title" href="#location-contact">Location</a>
+        </div>
+        <div class="col">
+          <a class="footer-navigation-title" href="#reviews">Reviews</a>
+        </div>
+      </div>
+    </div>
+      <div>
+        <br/>
+      </div>
+    </div>
+
   </div>
 
 

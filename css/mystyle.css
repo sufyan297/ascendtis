@@ -99,7 +99,8 @@ body, html {
   background-color: rgba(1,73,138,0.6);
 }
 .map-marker {
-  background-image: url("../images/Ascendtis.png");
+  /* background-image: url("../images/Ascendtis.png"); */
+  background-image: url("../images/Ascendtis_Location_green_2.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -259,6 +260,27 @@ body, html {
   position: relative;
   margin: auto;
   display: block;
+}
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-navigation-title {
+  font-family: 'Muli', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+.footer-navigation-title:hover {
+  text-decoration: none;
+  color: white;
 }
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 576px) {

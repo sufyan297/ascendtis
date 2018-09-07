@@ -19,6 +19,7 @@
   background-size: cover;
   background-position-x: 256px;
   background-position-y: -258px;
+  background-repeat: no-repeat;
 }
 .banner_content {
   z-index: 1;
@@ -46,8 +47,9 @@
 @media only screen and (max-width: 767px) {
   .banner-block {
     position: relative;
-    height: 250px;
+    height: 298px;
     overflow: hidden;
+    background-position: center;
   }
   .triangle {
     position: absolute;
@@ -56,7 +58,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 300px 350px 0 0;
+    border-width: 300px 360px 0 0; /* 350px */
     border-color: #004d95 transparent transparent transparent;
   }
   .banner_content {

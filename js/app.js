@@ -52,16 +52,7 @@ $(document).ready(function() {
      
     } // End if
   });
-
-
-  // $('.article').readmore({
-  //   collapsedHeight: 20,
-  //   blockCSS: 'display: inline-block; width: 50%;',
-  //   speed: 100,
-  //   moreLink: '<a href="#">Read more</a>',
-  //   lessLink: '<a href="#">Close</a>'
-  // });
-
+  
   /*
   * Show More/Less
   */

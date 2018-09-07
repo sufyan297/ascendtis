@@ -1,15 +1,23 @@
 .logo {
   height: 30px;
   width: auto;
+  margin-left: 15px;
 }
 .style_navbar {
   margin-left: 100px;
 }
 .nav-link {
-  color: #cdfbfe !important;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff !important;
 }
 .bg-dark.blue-bg {
   background-color: #004d95 !important;
+}
+.desktop-nav-item {
+  padding-left: 10px;
+  padding-right: 25px;
 }
 .banner-block {
   position: relative;
@@ -19,19 +27,19 @@
   background-size: cover;
   background-position-x: 256px;
   background-position-y: -258px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .banner_content {
   z-index: 1;
   color: white;
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 15px;
   color: #cdfbfe;
-  width: 550px;
-  font-size: 21px;
-  line-height: 2;
-
+  width: 645px;
+  font-size: 19px;
+  line-height: 1.7;
+  text-align: justify;
 }
 .triangle {
   position: absolute;
@@ -43,8 +51,16 @@
   border-width: 900px 1100px 0 0;
   border-color: #004d95 transparent transparent transparent;
 }
-
+.mobile-banner-title {
+  color: #cdfbfe;
+  font-family: 'Muli', sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
 @media only screen and (max-width: 767px) {
+  .logo {
+    margin-left: -35px;
+  }
   .banner-block {
     position: relative;
     height: 298px;
@@ -58,8 +74,15 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 300px 360px 0 0; /* 350px */
-    border-color: #004d95 transparent transparent transparent;
+    /* border-width: 300px 360px 0 0; 350px */
+    border-color: #004d9594 transparent transparent transparent;
+  }
+  .mobile-banner-content {
+    display: block;
+    position: absolute;
+    color: white;
+    margin-top: 20%;
+    font-weight: 300;
   }
   .banner_content {
     z-index: 1;
@@ -71,5 +94,6 @@
     width: 280px;
     font-size: 14px;
     line-height: 2;
+    display: none; /* Not Showing Main Banner Content on Mobile display*/
   }
 }

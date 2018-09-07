@@ -42,10 +42,12 @@ $(document).ready(function() {
       // Store hash
       var hash = this.hash;
       console.log("Hash: ", hash);
-      if (hash === '#services') {
+      if (hash === '#home') {
+        scrollToAnimate(hash, 1600);
+      } else if (hash === '#services') {
         scrollToAnimate(hash, 1600);
       } else if (hash === '#reviews') {
-        scrollToAnimate(hash, 300);
+        scrollToAnimate(hash, 1600);
       } else {
         scrollToAnimate(hash, 800);
       }

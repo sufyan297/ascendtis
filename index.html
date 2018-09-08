@@ -364,20 +364,20 @@
 
                     <div class="row">
                       <div class="col">
-                        <form>
+                        <form action="send_mail.php" method="POST">
                           <div class="form-group">
                             <label for="nameInput" style="color: white;">Name</label>
-                            <input type="email" class="form-control" id="nameInput" placeholder="John Doe">
+                            <input type="text" name="name" class="form-control" id="nameInput" placeholder="John Doe">
                           </div>
 
                           <div class="form-group">
                             <label for="emailInput" style="color: white;">Email address</label>
-                            <input type="email" class="form-control" id="emailInput" placeholder="john.doe@gmail.com">
+                            <input type="email" class="form-control" name="email" id="emailInput" placeholder="john.doe@gmail.com">
                           </div>
 
                           <div class="form-group">
                             <label for="interestedInSelect" style="color: white;">Interested In</label>
-                            <select class="form-control" id="interestedInSelect">
+                            <select class="form-control" name="interested_in" id="interestedInSelect">
                               <option>Request Quote</option>
                               <option>Product Query</option>
                               <option>Career</option>
@@ -387,7 +387,7 @@
 
                           <div class="form-group">
                             <label for="messageInput" style="color: white;">Message</label>
-                            <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                            <textarea class="form-control" name="message" id="messageInput" rows="3"></textarea>
                           </div>
 
                           <button type="submit" class="primary-btn w-100">Submit</button>
@@ -534,6 +534,7 @@
 
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script> -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="./js/notify.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125176058-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

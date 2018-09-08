@@ -5,6 +5,8 @@ $(document).ready(function() {
     margin:10,
     nav:true,
     stagePadding: 50,
+    autoplay: true,
+    autoplayTimeout: 10 * 1000,
     navText: ['<img src="./images/chevron-left.svg">', '<img src="./images/chevron-right.svg">'],
     responsive:{
       0:{

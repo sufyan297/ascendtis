@@ -373,7 +373,6 @@ body, html {
     /* Create the parallax scrolling effect */
     background-position: right;
     background-attachment: fixed;
-    background-position: inherit;
   }
   .testimonial-mobile-padding {
     padding-top: 10px;

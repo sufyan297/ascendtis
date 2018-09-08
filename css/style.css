@@ -36,7 +36,8 @@
   z-index: 1;
   color: white;
   position: absolute;
-  top: 50px;
+  /* top: 50px; */
+  top: 100px;
   left: 15px;
   color: #cdfbfe;
   width: 645px;

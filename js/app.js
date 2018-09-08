@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   var isMailSent = getParameterByName('mail_sent');
   if (isMailSent == 1) {
-    $.notify("Your request has been successfully submitted.");
+    $.notify("Your request has been successfully submitted.", "success");
   }
 
   $('.owl-carousel').owlCarousel({

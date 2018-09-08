@@ -21,13 +21,13 @@ $bodyHtml = "
 <b>Message: </b> $message<br/>
 ";
 
-$endpoint = "https://api.elasticemail.com/v2/";
+$endpoint = "http://api.elasticemail.com/v2/"; //https://
 $url = $endpoint."email/send?apikey=".$apikey."&bodyHtml=".$bodyHtml."&from=".$from."&fromName=".$fromName."&to=".$to."&subject=".$subject;
 // Send an asynchronous request.
 $request = new \GuzzleHttp\Psr7\Request('GET', $url);
 $promise = $client->sendAsync($request)->then(function ($response) {
     echo $response->getBody();
-    header('Location: https://ascendtis.com/?mail_sent=1');
+    header('Location: http://localhost/ascendtis/?mail_sent=1'); //https://ascendtis.com/?mail_sent=1
 });
 $promise->wait();
 ?>

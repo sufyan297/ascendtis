@@ -1,0 +1,13 @@
+
+{
+  "name": "buntu/ascendtis",
+  "authors": [
+    {
+      "name": "Mohammed Sufyan",
+      "email": "sufyan@ascendtis.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  }
+}

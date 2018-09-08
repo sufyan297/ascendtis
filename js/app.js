@@ -123,7 +123,7 @@ function blipMarker(idx = 0) {
 }
 
 function goToGoogleMap() {
-  window.open("https://www.google.com/maps/place/Marvel+Square/@22.2807163,73.1519703,19z","_blank");
+  window.open("https://goo.gl/maps/1VDjYoSD54t","_blank");
 }
 function goToUrl(url = '#') {
   window.open(url,"_blank");

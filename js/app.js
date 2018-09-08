@@ -21,15 +21,20 @@ $(document).ready(function() {
     }
   });
 
-  let idx = 0;
-  blipMarker(idx);
-  setInterval(() => {
+  var width = $(window).width();
+  var height = $(window).height();
+
+  if (width > 767) {
+    let idx = 0;
     blipMarker(idx);
-    idx ++;
-    if (idx > 2) {
-      idx = 0;
-    }
-  }, 350);
+    setInterval(() => {
+      blipMarker(idx);
+      idx ++;
+      if (idx > 2) {
+        idx = 0;
+      }
+    }, 350);
+  }
 
 
   //Smooth Scroll
@@ -51,7 +56,6 @@ $(document).ready(function() {
       } else {
         scrollToAnimate(hash, 800);
       }
-     
     } // End if
   });
   

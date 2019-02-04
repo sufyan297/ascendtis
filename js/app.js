@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  //reCaptcha v3
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6Lf8v44UAAAAAPtAnlK0EJPHBsTbFOQ4J4yskTfo', {action: 'homepage'}).then(function(token) {
+      console.log("Token: ", token);
+      $('#recaptcha_token').val(token);
+    });
+  });
+
+  //
 
   var isMailSent = getParameterByName('mail_sent');
   if (isMailSent == 1) {
